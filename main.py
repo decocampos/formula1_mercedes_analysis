@@ -30,3 +30,16 @@ if response.status_code == 200:
     print(data)
 else:
     print("Erro ao fazer a requisição:", response.status_code)
+
+ #Descobrir a colocação
+url3 = "https://api.openf1.org/v1/position"
+
+payload = ""
+headers = ""
+querystring = {"meeting_key":1242,"driver_number":63}
+response = requests.request("GET", url3, data=payload, headers=headers, params=querystring)
+if response.status_code == 200:
+    data = response.json()
+    print(data)
+else:
+    print("Erro ao fazer a requisição:", response.status_code)
