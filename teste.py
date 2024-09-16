@@ -10,7 +10,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support import expected_conditions as EC
 
 # URL da API
-api_url = "https://api.openf1.org/v1/team_radio?session_key=9574&driver_number=22"
+api_url = "https://api.openf1.org/v1/team_radio?session_key=9574&driver_number=63"
 
 # Faz a requisição à API
 response = requests.get(api_url)
